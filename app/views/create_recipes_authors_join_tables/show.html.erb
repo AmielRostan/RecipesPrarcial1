@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recipes:</strong>
+  <%= @create_recipes_authors_join_table.recipes %>
+</p>
+
+<p>
+  <strong>Authors:</strong>
+  <%= @create_recipes_authors_join_table.authors %>
+</p>
+
+<%= link_to 'Edit', edit_create_recipes_authors_join_table_path(@create_recipes_authors_join_table) %> |
+<%= link_to 'Back', create_recipes_authors_join_tables_path %>

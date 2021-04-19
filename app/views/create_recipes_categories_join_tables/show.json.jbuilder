@@ -1,0 +1,1 @@
+json.partial! "create_recipes_categories_join_tables/create_recipes_categories_join_table", create_recipes_categories_join_table: @create_recipes_categories_join_table

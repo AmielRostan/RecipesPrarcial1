@@ -1,0 +1,2 @@
+module AddCategoryIdToAuthorsHelper
+end

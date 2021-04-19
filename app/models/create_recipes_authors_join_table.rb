@@ -1,0 +1,2 @@
+class CreateRecipesAuthorsJoinTable < ApplicationRecord
+end

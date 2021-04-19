@@ -1,0 +1,1 @@
+json.partial! "add_category_id_to_authors/add_category_id_to_author", add_category_id_to_author: @add_category_id_to_author

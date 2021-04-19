@@ -1,0 +1,22 @@
+<%= form_with(model: add_category_id_to_author) do |form| %>
+  <% if add_category_id_to_author.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(add_category_id_to_author.errors.count, "error") %> prohibited this add_category_id_to_author from being saved:</h2>
+
+      <ul>
+        <% add_category_id_to_author.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.text_field :category_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

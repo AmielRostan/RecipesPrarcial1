@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <img src="<%= @recipe.image_url %>">
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <h1><%= @recipe.name %></h1>
+</p>
+
+<p>
+  <strong>Recipe Type:</strong>
+  <%= @recipe.recipe_type.name unless @recipe.recipe_type.nil? %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @recipe.category.name unless @recipe.category.nil? %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @recipe.description %>
+</p>
+
+<p>
+  <strong>Featured:</strong>
+  <%= @recipe.featured %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @recipe.ingredients %>
+</p>
+
+<p>
+  <strong>Steps:</strong>
+  <%= @recipe.steps %>
+</p>
+
+<p>
+  <strong>Submit date:</strong>
+  <%= @recipe.submit_date %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @recipe.author.name unless @recipe.author.nil? %>
+  <%= link_to (@recipe.author.name unless @recipe.author.nil?), authors_path(:author_id => author.id)) %>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

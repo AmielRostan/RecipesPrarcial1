@@ -1,0 +1,2 @@
+class CreateRecipesRecipeTypeJoinTable < ApplicationRecord
+end

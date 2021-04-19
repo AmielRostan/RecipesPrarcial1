@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recipes:</strong>
+  <%= @create_recipes_recipe_type_join_table.recipes %>
+</p>
+
+<p>
+  <strong>Recipe types:</strong>
+  <%= @create_recipes_recipe_type_join_table.recipe_types %>
+</p>
+
+<%= link_to 'Edit', edit_create_recipes_recipe_type_join_table_path(@create_recipes_recipe_type_join_table) %> |
+<%= link_to 'Back', create_recipes_recipe_type_join_tables_path %>
